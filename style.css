@@ -19,8 +19,9 @@
  max-width: 100%;
  
  height: 92px;
- background-color: #412567;
+ background-color: rgb(26,11,46);
  padding: 10px 200px;
+ 
 }
 /* logo */
 
@@ -28,7 +29,9 @@
   color: #FFFFFF;
 }
 .logo .logopart-2 {
-  background: linear-gradient(to top, rgb(249, 249, 10),rgb(224, 15, 123),rgb(241, 44, 241));
+  background: linear-gradient(to top,#F7E93F,
+    #FB09B4,
+    #9100F8);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -53,14 +56,19 @@
 }
 /* button */
 .button {
-  background: linear-gradient(to right, rgb(231, 231, 15),rgb(224, 15, 123),rgb(241, 44, 241));
+  background: linear-gradient( to top right,
+    #F7E93F,
+    #FB09B4,
+    #9100F8);
   color: #FFFFFF;
-  padding-bottom: 2px;
+  
   height: 44px;
   width: 135px;
   border: none;
   border-radius: 50px;
- 
+ display: flex;
+ justify-content: center;
+ align-items: center;
   
   
 }
@@ -84,10 +92,112 @@
   visibility: hidden;
 }
 
+/* hero section */
+.bannar-cotainer {
+    background-image: url('../assets/hero-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1570px;
+    width: 100%;
+  }
+   .card_container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+     padding-top: 80px; 
+    }
+   
+   
+  
+  .card_container .bannar_card_first_part  .circle {
+   width: 300px;
+   height: auto;
+  }
+  .card_container .bannar_card_first_part .microphone {
+    width: 100px;
+   height: auto;
+  } 
+   .card_container_btn {
+    background-color: #00FF88;
+    width: 80px;
+    height: 38px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    position: absolute;
+    margin-right: -200px;
+    margin-top: -240px;
+  } 
+ .bannar_card_first_part {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+} 
+
+  
+ .bannar_first_child {
+  position: absolute;
+  
+} 
+.bannar_title {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-top: 40px;
+  margin-bottom: 8px;
+} 
+ .bannar_subtitle {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 22px;
+} 
+.btn_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+} 
+.listen_btn {
+  background: linear-gradient(
+     to top right,
+    #F7E93F,
+    #FB09B4,
+    #9100F8);
+  color: #FFFFFF;
+  
+  height: 44px;
+  width: 201px;
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+} 
+ .subscribe_btn {
+  color: #00FF88;
+  height: 44px;
+  width: 147px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid #00FF88;
+  
+}
 
 /* Responsive for small and medium device */
 @media screen and (max-width: 576px) {
-  
+  /* navbar section responsive*/
 .navbar {
 
  max-width: 100%;
@@ -97,13 +207,41 @@
 .lists{
   display: none;
 }
+
 .button{
   display: none;
 }
 .three_dot{
   visibility: visible;
 }
-}
+/* hero section responsive */
+  .card_container {
+        padding-top : 40px;
+    height: 100%;
+    background-size: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+   }
+   .bannar-cotainer {
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+   }
+   .card_container .bannar_card_first_part .circle {
+    width: 201px;
+    height: 201px;
+  }
+  .card_container .bannar_card_first_part .microphone {
+    width: 80px;
+   height: 80px;
+  }
+  .card_container_btn {
+    
+    margin-right: -140px;
+    margin-top: -160px;
+  } }
+  
   @media screen and (min-width: 576px) and (max-width: 768px){
     .navbar {
 
@@ -120,6 +258,34 @@
 .three_dot{
   visibility: visible;
 }
-}
+
+/* hero section responsive */
+  .card_container {
+        padding-top : 40px;
+    height: 100%;
+    background-size: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+   }
+   .bannar-cotainer {
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+   }
+   .card_container .bannar_card_first_part .circle {
+    width: 201px;
+    height: 201px;
+  }
+  .card_container .bannar_card_first_part .microphone {
+    width: 80px;
+   height: 80px;
+  }
+  .card_container_btn {
+    
+    margin-right: -140px;
+    margin-top: -160px;
+  } }
+  
   
 
